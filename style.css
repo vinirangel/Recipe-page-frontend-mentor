@@ -1,0 +1,227 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit';
+}
+
+/* Top Image */
+#omelette {
+    width: 100%;
+}
+
+/*Header styling */
+.wrapper p {
+    font-size: 16px;
+}
+
+header {
+    padding: 2rem;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-family: 'Young Serif';
+    color: var(--Stone-900);
+}
+
+/* Preparation time box styling */
+.preparation-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    width: 80%;
+    height: 30%;
+    padding: 10px 20% 0 10%;
+    border-radius: 10px;
+    background-color: var(--Rose-50);
+}
+
+#preparation-header {
+    color: var(--Rose-800);
+    align-self: flex-start;
+    margin: 5px 0 10px -20px;
+}
+
+.preparation-time li {
+    margin: 0 10% 10px 0;
+}
+
+.preparation-time li::marker{
+    color: var(--Rose-800);
+    padding: 10px 20% 0 80%;
+    
+}
+
+/* Make list text bold */
+ul mark {
+    color: var(--Stone-900);
+    background: none;
+    font-weight: 600;
+}
+
+/* Ingredients styling*/
+
+#ingredients-header{
+    color: var(--Brown-800);
+    font-family: 'Young Serif';
+    align-self: flex-start;
+    margin: 5% 0 10px 5%;
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    height: 170px;
+    padding: 10px 20% 0 10%;
+    border-bottom: solid;
+    border-color: white;
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.11);
+    margin-bottom: 30px;
+}
+
+.ingredients span {
+    position: relative;
+    left: 5%;
+}
+
+.ingredients li::marker{
+    color: var(--Brown-800);
+}
+
+/* Instructions styling */
+#Instructions-Header {
+    color: var(--Brown-800);
+    font-family: 'Young Serif';
+    align-self: flex-start;
+    margin: 0 0 10px 5%;
+}
+
+.instructions {
+    padding: 10px 10% 10% 10%;
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.11);
+    margin-bottom: 30px;
+}
+
+.instructions li {
+    margin: 0 10% 10px 0;
+}
+
+.instructions li::marker {
+    color: var(--Rose-800);
+}
+
+.instructions span {
+    position: relative;
+    left: 5%;
+}
+
+/* Make list text bold */
+ol mark {
+    color: var(--Stone-900);
+    background: none;
+    font-weight: 600;
+}
+
+/*Nutrition styling */
+
+#Nutrition-header {
+    color: var(--Brown-800);
+    font-family: 'Young Serif';
+    align-self: flex-start;
+    margin: 0 0 10px 5%;
+}
+
+#nutrition-paragraph {
+    margin: 10px 0 10% 10%;
+}
+
+.calories {
+    display: flex;
+    gap: 30%;
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.11);
+    margin-bottom: 20px;
+    padding-left: 20px;
+    line-height: 3rem;
+}
+
+.carbs {
+    display: flex;
+    gap: 35%;
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.11);
+    margin-bottom: 20px;
+    padding-left: 20px;
+    line-height: 3rem;
+}
+
+.protein {
+    display: flex;
+    gap: 32%;
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.11);
+    margin-bottom: 20px;
+    padding-left: 20px;
+    line-height: 3rem;
+}
+
+.fat {
+    display: flex;
+    gap: 41%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    line-height: 3rem;
+}
+
+/* Left side of the nutrition table */
+.left-side {
+    color: var(--Stone-600);
+}
+
+/* Right side of the nutrition table */
+.right-side {
+    color: var(--Brown-800);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 675px) {
+    body{
+        background-color: var(--Stone-100);
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        font-family: 'Outfit';
+        padding: 2rem;
+        background-color: var(--White);
+    }
+}
